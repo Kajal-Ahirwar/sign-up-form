@@ -1,0 +1,94 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Background image */
+.background {
+  background: url("img.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo section with semi-transparent overlay */
+.logo-section {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.logo-section h1 {
+  font-family: 'Norse Bold', serif; /* Replace with your chosen font */
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Form styling */
+.form-section {
+  background-color: rgb(2, 2, 2);
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+/* Focus state */
+input:focus {
+  border: 1px solid #2563EB;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  outline: none;
+}
+
+/* Invalid password state */
+input:invalid {
+  border: 1px solid red;
+}
+
+/* Button styling */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #596D48;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
